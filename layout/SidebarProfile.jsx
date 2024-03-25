@@ -66,7 +66,7 @@ const SidebarProfile = () => {
 
         <div className="px-4 py-5 lg:py-6 lg:px-6 rounded-2xl md:px-8 bg-flashWhite dark:bg-metalBlack">
           <div className="text-sm font-medium text-black dark:text-white">
-            Skills
+            Top Skills
           </div>
           <div className="flex items-center justify-between my-4 space-x-4 skills_circle">
             {userDetailsSidebar?.skillsInfo?.map((item) => (
@@ -96,36 +96,7 @@ const SidebarProfile = () => {
                           isVisible || change ? item?.value : 0;
 
                         return (
-                          <CircularProgressbarWithChildren
-                            strokeWidth={3}
-                            className="relative w-12 h-12 circle"
-                            styles={{
-                              root: {},
-                              path: {
-                                stroke: "#02B189",
-                                transition: change
-                                  ? "stroke-dashoffset 0.5s ease 0s"
-                                  : "none",
-                                transform: "rotate(0.25turn)",
-                                transformOrigin: "center center",
-                              },
-                              // background: "red",
-                              trail: {
-                                stroke: "#B7B7B7",
-                                strokeLinecap: "butt",
-                                transform: "rotate(0.25turn)",
-                                transformOrigin: "center center",
-                              },
-                              text: {
-                                // fill: '#f88',
-                                // fontSize: '16px',
-                              },
-                              background: {
-                                fill: "#3e98c7",
-                              },
-                            }}
-                            value={percentage}
-                          >
+                          
                             <div
                               className="absolute inset-0 text-[13px] font-medium label flex-center"
                               ref={countUpRef}
@@ -134,7 +105,6 @@ const SidebarProfile = () => {
                                 {percentage}
                               </p>
                             </div>
-                          </CircularProgressbarWithChildren>
                         );
                       }}
                     </VisibilitySensor>
