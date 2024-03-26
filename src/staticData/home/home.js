@@ -9,10 +9,12 @@ import ExternalLinkIcon from "@/src/components/icons/home/ExternalLinkIcon";
 import {
   FaBlog,
   FaBriefcase,
+  FaEnvelopeOpen,
   FaExternalLinkAlt,
   FaFolderOpen,
   FaGraduationCap,
   FaRegEnvelopeOpen,
+  FaVoicemail,
 } from "react-icons/fa";
 import { GrTasks } from "react-icons/gr";
 import { BiCheckDouble, BiCommentCheck } from "react-icons/bi";
@@ -76,7 +78,7 @@ import author2 from "@/public/assets/img/testimonial/author2.png";
 import { IoHomeOutline } from "react-icons/io5";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { findIconDefinition } from "@fortawesome/fontawesome-svg-core";
-import { faDocker, faFacebook, faGithub, faGithubSquare, faLinkedin, faLinkedinIn, faStackOverflow } from "@fortawesome/free-brands-svg-icons";
+import { faDocker, faEnvira, faFacebook, faGithub, faGithubSquare, faLinkedin, faLinkedinIn, faMailchimp, faOpencart, faStackOverflow, faEnvelope, faMandalorian, faSignalMessenger } from "@fortawesome/free-brands-svg-icons";
 
 export const introduce = {
   iconBox: {
@@ -150,7 +152,7 @@ export const userDetails = [
   },
   {
     field: "Email",
-    value: "devfcp@gmail.com",
+    value: "devfcph@gmail.com",
   },
   {
     field: "Languages",
@@ -194,6 +196,16 @@ export const userDetailsSidebar = {
       field: "Open to work",
       value: "100%",
     },
+    {
+      id: 5,
+      field: "Email",
+      value: "devfcph@gmail.com",
+    },
+    {
+      id: 6,
+      field: "Mobile",
+      value: "+52 961 372 34 12",
+    },
   ],
   skillsInfo: [
     {
@@ -235,6 +247,12 @@ export const userDetailsSidebar = {
       value: "Docker",
       uri: "https://hub.docker.com/u/crishdzdev",
       icon: faDocker
+    },
+    {
+      id: 4,
+      value: "Email",
+      uri: "mailto:devfcph@gmail.com",
+      icon: faSignalMessenger
     },
   ]
 };
