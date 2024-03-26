@@ -15,12 +15,12 @@ export default async function Home() {
     <Layout>
       <Hero />
       <AboutMe />
+      <Resume />
       <Service />
       <Skills />
-      <Resume />
-      <Portfolio />
+      {/* <Portfolio />
       <Blog />
-      <Testimonial />
+      <Testimonial /> */}
       <ContactMe />
       <Footer />
     </Layout>

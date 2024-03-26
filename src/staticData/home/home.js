@@ -1057,25 +1057,25 @@ export const contactInfo = {
     heading: "Contact",
     coloredHeading: "Me.",
     description:
-      "I design products that are more than pretty. I make them shippable and usable, ttempor non mollit dolor et do aute",
+      "Hire me :)",
   },
   contactInfoData: [
     {
       id: 1,
       field: "Location",
-      data: "Melbourne Street. No 20",
+      data: "Mexico City",
       Icon: <LocationIcon />,
     },
     {
       id: 2,
       field: "E-mail",
-      data: "smith@gmail.com",
+      data: "devfcph@gmail.com",
       Icon: <EmailIcon />,
     },
     {
       id: 3,
       field: "Phone",
-      data: "+976 34 99 99",
+      data: "(+52) 961 372 34 12",
       Icon: <PhoneIcon />,
     },
   ],
