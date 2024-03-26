@@ -30,20 +30,19 @@ const AboutMe = () => {
             <span className="text-black dark:text-white">
               {userDetailsSidebar?.userName}
             </span>{" "}
-            and I began using WordPress when first began. spent most of my
-            waking hours for the last ten years designing, programming and
-            operating{" "}
-            <span className="text-black dark:text-white"> WordPress</span> sites
-            go beyond with exclusive designer.
+            and I'm an enthusiastic 
+            <span className="text-black dark:text-white"> software developer. </span>
+            I consider myself a person with logical and critical thinking, analytical and focused on problem solving. 🧠
+            {" "} <br />
+            I have a passion for the challenges that are presented to me every day, since each one of them is an opportunity to test my skills, qualities and experience as a 
+            <span className="text-black dark:text-white"> programmer. 📈 </span>
+            <br />
+            <br />
+            <span className="inline-block px-2.5 py-5 transition duration-300 border border-dashed text-white /70 border-platinum dark:border-greyBlack rounded-3xl md:px-20 md: md:py-6 hover:text-theme dark:hover:text-white text-center"> Welcome to all the challenges that make me grow professionally and personally!</span>
           </p>
         </div>
+        <br />
         <div className="mt-6 section-content">
-          <div className="inline-flex flex-wrap items-center gap-2 mb-5 text-sm md:gap-4">
-            {technologies?.map((tech) => (
-              <AboutTechnologies key={tech?.id} {...tech} />
-            ))}
-          </div>
-
           <ul className="grid mt-4 mb-10 text-sm lg:mt-6 md:grid-cols-2 gap-x-8 gap-y-3">
             {userDetails?.map((singlInfo, i) => (
               <UserDetail key={i} {...singlInfo} />

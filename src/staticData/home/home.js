@@ -127,24 +127,25 @@ export const technologies = [
 
 export const userDetails = [
   {
-    field: "Phone",
-    value: "+(2) 870 174 302",
-  },
-  {
-    field: "Skype",
-    value: "brown@com",
-  },
-  {
-    field: "Language",
-    value: "English, Dutch, Spanish",
+    field: "Mobile",
+    value: "(+52) 961 372 34 12",
   },
   {
     field: "Email",
-    value: "info@example.com",
+    value: "devfcp@gmail.com",
   },
   {
-    field: "GitHub",
-    value: "github.com/user",
+    field: "Languages",
+    value: [
+      {
+        language: "Español",
+        profiency: "Native speaker"
+      },
+      {
+        language: "English",
+        profiency: "Professional working profiency"
+      },
+    ]
   },
 ];
 
@@ -226,6 +227,16 @@ export const projectExperiences = [
     count: 5,
     postFix: true,
   },
+  {
+    title: "Public repositories",
+    count: 25,
+    postFix: true,
+  },
+  {
+    title: "Solved bugs",
+    count: 200,
+    postFix: true,
+  }
 ];
 
 export const services = {
