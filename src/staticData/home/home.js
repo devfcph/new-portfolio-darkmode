@@ -24,6 +24,22 @@ import htmlImage from "@/public/assets/img/skill/html.svg";
 import cssImage from "@/public/assets/img/skill/css.svg";
 import jsImage from "@/public/assets/img/skill/js.svg";
 import jqueryImage from "@/public/assets/img/skill/jquery.svg";
+import csharpImage from "@/public/assets/img/skill/csharp.svg";
+import javaImage from "@/public/assets/img/skill/java.svg";
+import phpImage from "@/public/assets/img/skill/php.svg";
+import nodejsImage from "@/public/assets/img/skill/nodejs.svg";
+import golangImage from "@/public/assets/img/skill/golang.svg";
+import pythonImage from "@/public/assets/img/skill/python.svg";
+import reactImage from "@/public/assets/img/skill/react.svg";
+import vuejsImage from "@/public/assets/img/skill/vuejs.svg";
+import laravelImage from "@/public/assets/img/skill/laravel.svg";
+import awsImage from "@/public/assets/img/skill/aws.svg";
+import googleCloudImage from "@/public/assets/img/skill/google-cloud.svg";
+import flutterImage from "@/public/assets/img/skill/flutter.svg";
+import swiftImage from "@/public/assets/img/skill/swift.svg";
+import sqlServerImage from "@/public/assets/img/skill/sql-server.svg";
+import mongoImage from "@/public/assets/img/skill/mongodb.svg";
+import mysqlImage from "@/public/assets/img/skill/mysql.svg";
 
 import partner1Image from "@/public/assets/img/partners/logo1.svg";
 import partner2Image from "@/public/assets/img/partners/logo2.svg";
@@ -172,7 +188,7 @@ export const userDetailsSidebar = {
       field: "Age",
       value: "26",
     },
-    
+
     {
       id: 4,
       field: "Open to work",
@@ -350,45 +366,128 @@ export const skills = {
     icon: <FaGraduationCap className="text-theme" />,
     title: "SKILLS",
     heading: "My",
-    coloredHeading: "Advantages",
+    coloredHeading: "Tech Skills",
     description:
       "I design products that are more than pretty. I make them shippable and usable, ttempor non mollit dolor et do aute",
   },
-  skillsData: [
+  backendSkills: [
     {
-      image: figmaImage?.src,
+      image: csharpImage?.src,
       percent: 90,
-      name: "Figma",
+      name: "C#",
     },
     {
-      image: webflowImage?.src,
+      image: javaImage?.src,
       percent: 85,
-      name: "Webflow",
+      name: "Java",
     },
     {
-      image: tailwindImage?.src,
+      image: phpImage?.src,
       percent: 90,
       name: "Tailwind",
     },
     {
-      image: htmlImage?.src,
+      image: nodejsImage?.src,
       percent: 95,
-      name: "HTML5",
+      name: "NodeJs",
     },
     {
-      image: cssImage?.src,
+      image: golangImage?.src,
       percent: 95,
-      name: "CSS3",
+      name: "Golang",
     },
     {
-      image: jsImage?.src,
+      image: pythonImage?.src,
       percent: 75,
-      name: "JavaScript",
+      name: "Python",
+    },
+  ],
+  frontendSkills: [
+    {
+      image: reactImage?.src,
+      percent: 90,
+      name: "React",
     },
     {
-      image: jqueryImage?.src,
-      percent: 70,
-      name: "jQuery",
+      image: vuejsImage?.src,
+      percent: 85,
+      name: "VueJs",
+    },
+    {
+      image: laravelImage?.src,
+      percent: 90,
+      name: "Laravel",
+    },
+    {
+      image: "",
+      percent: 85,
+      name: "",
+    },
+  ],
+  databaseSkills: [
+    {
+      image: sqlServerImage?.src,
+      percent: 90,
+      name: "SQL Server",
+    },
+    {
+      image: mysqlImage?.src,
+      percent: 85,
+      name: "MySql",
+    },
+    {
+      image: mongoImage?.src,
+      percent: 90,
+      name: "Mongo DB",
+    },
+    {
+      image: "",
+      percent: 85,
+      name: "",
+    },
+  ],
+  mobileSkills: [
+    {
+      image: swiftImage?.src,
+      percent: 90,
+      name: "Swift Native",
+    },
+    {
+      image: flutterImage?.src,
+      percent: 85,
+      name: "Flutter",
+    },
+    {
+      image: "",
+      percent: 90,
+      name: "",
+    },
+    {
+      image: "",
+      percent: 85,
+      name: "",
+    },
+  ],
+  cloudSkills: [
+    {
+      image: awsImage?.src,
+      percent: 90,
+      name: "Amazon Web Services",
+    },
+    {
+      image: googleCloudImage?.src,
+      percent: 85,
+      name: "Google Cloud Platform",
+    },
+    {
+      image: "",
+      percent: 90,
+      name: "",
+    },
+    {
+      image: "",
+      percent: 85,
+      name: "",
     },
   ],
 };
@@ -411,8 +510,8 @@ export const resume = {
       duration: "November, 2023 - March, 2024",
       schema: "OnSite",
       position: "Cloud Arquitect",
-      description : [
-        "Specialized in serverless deployment of services using AWS Lambda, leveraging automatic scalability and operational efficiency.", 
+      description: [
+        "Specialized in serverless deployment of services using AWS Lambda, leveraging automatic scalability and operational efficiency.",
         "Executed precise deployment methodologies for instances and various AWS services, employing best practices to guarantee robust and reliable implementations in alignment with project requirements."
       ]
     },
@@ -421,8 +520,8 @@ export const resume = {
       duration: "October, 2022 - November, 2023",
       schema: "Hybrid",
       position: "Java Microservices Developer",
-      description : [
-        " Extensive experience in breaking down monolithic applications into microservices, using Java and Spring Boot to achieve flexible and easily maintainable architectures.", 
+      description: [
+        " Extensive experience in breaking down monolithic applications into microservices, using Java and Spring Boot to achieve flexible and easily maintainable architectures.",
         "Utilized Docker and GitLab to create and maintain container-based microservices, providing standardized and secure deployments.",
         "* Priority in implementing Apache Kafka for the creation of efficient and scalable messaging systems, facilitating real-time event transmission among microservices."
       ]
@@ -432,8 +531,8 @@ export const resume = {
       duration: "July, 2022 - October, 2022",
       schema: "Remote",
       position: "iOS Mobile Developer",
-      description : [
-        "Conceptualized and crafted user interfaces for iOS applications using Swift, ensuring a seamless and captivating user experience", 
+      description: [
+        "Conceptualized and crafted user interfaces for iOS applications using Swift, ensuring a seamless and captivating user experience",
       ]
     },
     {
@@ -441,10 +540,10 @@ export const resume = {
       duration: "October, 2020 - October, 2022",
       schema: "Hybrid",
       position: "Fullstack Developer",
-      description : [
-        "Developed the implementation of a comprehensive payroll calculation system for all levels of the government of the state of Chiapas, employing SQL extensively and leveraging stored procedures, functions, and views to ensure efficiency and accuracy in the process.", 
-        "Developed dynamic web applications using Microsoft SQL Server, ASP.NET Web API, and Vue.js, consistently delivering robust and scalable solutions.", 
-        "Utilized the adoption of agile software development methodologies, orchestrating Scrum practices to ensure efficient project management and maintain development momentum.", 
+      description: [
+        "Developed the implementation of a comprehensive payroll calculation system for all levels of the government of the state of Chiapas, employing SQL extensively and leveraging stored procedures, functions, and views to ensure efficiency and accuracy in the process.",
+        "Developed dynamic web applications using Microsoft SQL Server, ASP.NET Web API, and Vue.js, consistently delivering robust and scalable solutions.",
+        "Utilized the adoption of agile software development methodologies, orchestrating Scrum practices to ensure efficient project management and maintain development momentum.",
         "Developed intuitive and immersive user interfaces, driving significant enhancements in user engagement and overall satisfaction."
       ]
     },
@@ -453,9 +552,9 @@ export const resume = {
       duration: "June, 2020 - October, 2020",
       schema: "OnSite",
       position: "Fullstack Developer",
-      description : [
-        "Developed web services with RESTful architecture, using .NET and Microsoft SQL Server for storage", 
-        "Performing code maintenance and bug fixing in projects developed in both PHP and .NET. This involved identifying and resolving errors to ensure the functionality and stability of the applications at all times", 
+      description: [
+        "Developed web services with RESTful architecture, using .NET and Microsoft SQL Server for storage",
+        "Performing code maintenance and bug fixing in projects developed in both PHP and .NET. This involved identifying and resolving errors to ensure the functionality and stability of the applications at all times",
       ]
     },
     {
@@ -463,9 +562,9 @@ export const resume = {
       duration: "August, 2018 - January, 2020",
       schema: "OnSite",
       position: "Fullstack Developer",
-      description : [
-        "Developed web services with RESTful architecture, using .NET and Microsoft SQL Server for storage.",  
-        " Performing code maintenance and bug fixing in projects developed in both PHP and .NET.", 
+      description: [
+        "Developed web services with RESTful architecture, using .NET and Microsoft SQL Server for storage.",
+        " Performing code maintenance and bug fixing in projects developed in both PHP and .NET.",
         "Implemented and tested a number of solutions resolving complex data issues while ensuring the robustness and scalability of the code."
       ]
     },

@@ -24,4 +24,9 @@ export const projectTechnologies = [
     image: "/assets/img/skill/figma.svg",
     value: 90,
   },
+  {
+    title: "CSharp",
+    image: "/assets/img/skill/csharp.svg",
+    value: 90,
+  },
 ];
