@@ -5,9 +5,11 @@ import PhoneIcon from "@/src/components/icons/home/PhoneIcon";
 import SeoIcon from "@/src/components/icons/home/SeoIcon";
 import UiUxIcon from "@/src/components/icons/home/UiUxIcon";
 import WebDevIcon from "@/src/components/icons/home/WebDevIcon";
+import ExternalLinkIcon from "@/src/components/icons/home/ExternalLinkIcon";
 import {
   FaBlog,
   FaBriefcase,
+  FaExternalLinkAlt,
   FaFolderOpen,
   FaGraduationCap,
   FaRegEnvelopeOpen,
@@ -241,7 +243,7 @@ export const projectExperiences = [
 
 export const services = {
   servicesHeading: {
-    icon: <FaBriefcase className="text-theme" />,
+    icon: <FaGraduationCap className="text-theme" />,
     title: "SERVICES",
     heading: "My",
     coloredHeading: "Services",
@@ -276,6 +278,69 @@ export const services = {
       title: "Branding & Strategy",
       desc: "I design products that are more than pretty. I make them shippable.",
       icon: <BrandingIcon />,
+    },
+  ],
+};
+
+
+
+export const certificates = {
+  certificatesHeading: {
+    icon: <FaGraduationCap className="text-theme" />,
+    title: "CERTIFACTIONS",
+    heading: " ",
+    coloredHeading: "Certifications",
+    description:
+      "\"The ability to learn is a gift; the capacity to learn is a skill; the willingness to learn is a choice.\" - Brian Herbert",
+  },
+  certificatesData: [
+    {
+      id: 1,
+      number: "May, 2023",
+      title: "Cloud Arquitecture",
+      desc: "Google Cloud Skills Boost",
+      icon: <ExternalLinkIcon />,
+      uri: "https://www.cloudskillsboost.google/public_profiles/a25389ce-740e-48a4-bb67-c3296f58f8aa/badges/3752007?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share",
+    },
+    {
+      id: 2,
+      number: "May, 2023",
+      title: "Google Cloud Essentials",
+      desc: "Google Cloud Skills Boost",
+      icon: <ExternalLinkIcon />,
+      uri: "https://www.cloudskillsboost.google/public_profiles/a25389ce-740e-48a4-bb67-c3296f58f8aa/badges/3778980?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share",
+    },
+    {
+      id: 3,
+      number: "May, 2023",
+      title: "Cloud Engineering",
+      desc: "Google Cloud Skills Boost",
+      icon: <ExternalLinkIcon />,
+      uri: "https://www.cloudskillsboost.google/public_profiles/a25389ce-740e-48a4-bb67-c3296f58f8aa/badges/3751266?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share"
+    },
+    {
+      id: 4,
+      number: "Jun, 2022",
+      title: "Introduction to IoT",
+      desc: "Cisco Academy",
+      icon: <ExternalLinkIcon />,
+      uri: "https://www.credly.com/badges/49f334de-98a8-4f7e-a62d-9eb58265f656?source=linked_in_profile"
+    },
+    {
+      id: 5,
+      number: "May, 2022",
+      title: "Scrum Fundamentals Certified",
+      desc: "SCRUMStudy",
+      icon: <ExternalLinkIcon />,
+      uri: "https://c46e136a583f7e334124-ac22991740ab4ff17e21daf2ed577041.ssl.cf1.rackcdn.com/Certificate/ScrumFundamentalsCertified-FranciscoCrist%C3%B3balP%C3%A9rezHern%C3%A1ndez.-915871.pdf"
+    },
+    {
+      id: 5,
+      number: "Sep, 2023",
+      title: "AWS Educate Machine Learning Foundations",
+      desc: "Amazon Training and Certification",
+      icon: <ExternalLinkIcon />,
+      uri: "https://www.credly.com/badges/bdbb1122-e22b-428c-9fcd-0a97a2c60b10/public_url"
     },
   ],
 };
