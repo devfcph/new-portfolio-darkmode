@@ -214,7 +214,7 @@ export const userDetailsSidebar = {
     {
       id: 3,
       value: "Docker",
-      uri: "https://www.linkedin.com/in/cris-hernandez-fcphdev",
+      uri: "https://hub.docker.com/u/crishdzdev",
       icon: faDocker
     },
   ]
