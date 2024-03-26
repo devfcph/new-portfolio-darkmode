@@ -9,6 +9,9 @@ import { CircularProgressbarWithChildren } from "react-circular-progressbar";
 import CountUp from "react-countup";
 import { useEffect, useState } from "react";
 import { IoCloudDownloadOutline } from "react-icons/io5";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
+
 
 const SidebarProfile = () => {
   const [change, setChange] = useState(false);
@@ -66,7 +69,7 @@ const SidebarProfile = () => {
 
         <div className="px-4 py-5 lg:py-6 lg:px-6 rounded-2xl md:px-8 bg-flashWhite dark:bg-metalBlack">
           <div className="text-sm font-medium text-black dark:text-white">
-            Top Skills
+            Highest Skills
           </div>
           <div className="flex items-center justify-between my-4 space-x-4 skills_circle">
             {userDetailsSidebar?.skillsInfo?.map((item) => (
@@ -94,18 +97,6 @@ const SidebarProfile = () => {
                       {({ isVisible }) => {
                         const percentage =
                           isVisible || change ? item?.value : 0;
-
-                        return (
-                          
-                            <div
-                              className="absolute inset-0 text-[13px] font-medium label flex-center"
-                              ref={countUpRef}
-                            >
-                              <p className="text-[13px] font-normal dark:font-light text-black dark:text-white/90">
-                                {percentage}
-                              </p>
-                            </div>
-                        );
                       }}
                     </VisibilitySensor>
                   )}
@@ -113,6 +104,56 @@ const SidebarProfile = () => {
                 <p className="text-[13px] font-normal dark:font-light text-black dark:text-white/90">
                   {item?.name}
                 </p>
+              </div>
+            ))}
+          </div>
+          <div className="text-sm font-medium text-black dark:text-white">
+            Social Media
+          </div>
+          <div className="flex items-center justify-between my-4 space-x-4 skills_circle">
+            {userDetailsSidebar?.socialMedia?.map((item) => (
+              <div
+                key={item?.id}
+                className="space-y-2 text-center progressCircle"
+              >
+                <CountUp
+                  start={0}
+                  end={item?.value}
+                  duration={5}
+                  // redraw={true}
+                  suffix="%"
+                >
+                  {({ countUpRef, start }) => (
+                    <VisibilitySensor
+                      onChange={(visible) => {
+                        if (visible && !counterStarted) {
+                          setCounterStarted(true);
+                          start();
+                          setChange(true);
+                        }
+                      }}
+                    >
+                      {({ isVisible }) => {
+                        const percentage =
+                          isVisible || change ? item?.value : 0;
+                      }}
+                    </VisibilitySensor>
+                  )}
+                </CountUp>
+                <Link
+                  href={item?.uri}
+                  target="_blank"
+                >
+                  <span className="animate-bounce">
+                  <FontAwesomeIcon icon={item?.icon} className="icon" size="2x" />
+              </span>
+                
+                <p className="text-[13px] font-normal dark:font-light text-black dark:text-white/90">
+                  {item?.value}
+                  
+                </p>
+                </Link>
+                
               </div>
             ))}
           </div>

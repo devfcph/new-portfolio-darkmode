@@ -56,6 +56,9 @@ import blog3Image from "@/public/assets/img/blog/article3.png";
 import author1 from "@/public/assets/img/testimonial/author1.png";
 import author2 from "@/public/assets/img/testimonial/author2.png";
 import { IoHomeOutline } from "react-icons/io5";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { findIconDefinition } from "@fortawesome/fontawesome-svg-core";
+import { faDocker, faFacebook, faGithub, faGithubSquare, faLinkedin, faLinkedinIn, faStackOverflow } from "@fortawesome/free-brands-svg-icons";
 
 export const introduce = {
   iconBox: {
@@ -195,6 +198,26 @@ export const userDetailsSidebar = {
       value: 90,
     },
   ],
+  socialMedia: [
+    {
+      id: 1,
+      value: "LinkedIn",
+      uri: "https://www.linkedin.com/in/cris-hernandez-fcphdev",
+      icon: faLinkedin
+    },
+    {
+      id: 2,
+      value: "GitHub",
+      uri: "https://github.com/devfcph",
+      icon: faGithub
+    },
+    {
+      id: 3,
+      value: "Docker",
+      uri: "https://www.linkedin.com/in/cris-hernandez-fcphdev",
+      icon: faDocker
+    },
+  ]
 };
 
 export const projectExperiences = [
