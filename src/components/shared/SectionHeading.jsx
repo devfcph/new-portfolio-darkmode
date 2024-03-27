@@ -20,7 +20,6 @@ const SectionHeading = ({
             <span className="font-semibold text-theme">{coloredHeading}</span>
           </h2>
         )}
-        <p className="max-w-xl mt-4 md:mt-6 subtitle">{description}</p>
       </div>
     </div>
   );
