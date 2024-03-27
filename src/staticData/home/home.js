@@ -402,7 +402,7 @@ export const skills = {
     {
       image: phpImage?.src,
       percent: 90,
-      name: "Tailwind",
+      name: "PHP",
     },
     {
       image: nodejsImage?.src,
