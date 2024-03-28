@@ -155,15 +155,65 @@ export const userDetails = [
     value: "devfcph@gmail.com",
   },
   {
+    field: "Age",
+    value: "26",
+  },
+  {
     field: "Languages",
     value: [
       {
-        language: "Español",
-        profiency: "Native speaker"
+        label: "Spanish",
+        description: "Native speaker"
       },
       {
-        language: "English",
-        profiency: "Professional working profiency"
+        label: "English",
+        description: "Professional working profiency"
+      },
+    ]
+  },
+  {
+    field: "Hobbies",
+    value: [
+      {
+        label: "Cycling",
+        description: ""
+      },
+      {
+        label: "Boxing",
+        description: ""
+      },
+      {
+        label: "Learning",
+        description: ""
+      },
+      {
+        label: "Concerts",
+        description: ""
+      },
+    ]
+  },
+  {
+    field: "More about me",
+    value: [
+      {
+        label: "Credly",
+        description: "",
+        uri: "https://www.credly.com/users/francisco-perez-hernandez/badges"
+      },
+      {
+        label: "Reddit",
+        description: "",
+        uri: "https://www.reddit.com/user/devfcph/"
+      },
+      {
+        label: "StackOverflow",
+        description: "",
+        uri: "https://stackoverflow.com/users/22437732/francisco-p%C3%A9rez-hern%C3%A1ndez"
+      },
+      {
+        label: "Telegram",
+        description: "",
+        uri: "https://t.me/cris_dev"
       },
     ]
   },
@@ -187,22 +237,16 @@ export const userDetailsSidebar = {
     },
     {
       id: 3,
-      field: "Age",
-      value: "26",
-    },
-
-    {
-      id: 4,
       field: "Open to work",
       value: "100%",
     },
     {
-      id: 5,
+      id: 4,
       field: "Email",
       value: "devfcph@gmail.com",
     },
     {
-      id: 6,
+      id: 5,
       field: "Mobile",
       value: "+52 961 372 34 12",
     },

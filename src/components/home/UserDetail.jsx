@@ -1,3 +1,6 @@
+import Link from "next/link";
+
+
 const UserDetail = ({ field, value }) => {
   return (
     <li className="flex items-center">
@@ -7,7 +10,18 @@ const UserDetail = ({ field, value }) => {
         {
           Array.isArray(value)?
           value.map((item, index) => {
-            return <li key={index}>{item.language} : {item.profiency}</li>
+          
+
+            return item.hasOwnProperty("uri") ? 
+              <Link
+                href={item.uri}
+                target="_blank"
+              >
+                <u><li key={index}> {item.label} { item.description != "" ? ":" : ''} {item.description}</li></u>
+              </Link>
+              : <li key={index}>{item.label}  { item.description != "" ? ":" : ''} {item.description}</li>
+
+            //return <li key={index}>{item.label}  { item.description != "" ? ":" : ''} {item.description}</li>
           }) : value
         }
       </span>
