@@ -32,6 +32,10 @@ const Hero = () => {
                 <IntroduceJob key={i} {...item} />
               ))}
             </ul>
+            <br />
+            <h1 className="text-[32px] lg:text-5xl xl:text-4xl 2xl:text-5xl font-semibold text-black dark:text-white leading-1.27 lg:leading-1.27 xl:leading-1.27 2xl:leading-1.27 mb-4 lg:mb-5">
+              <span className="text-theme">#OpenToWork</span>
+            </h1>
             <ul className="mt-7 buttons">
               <li data-scroll-nav="8">
                 <Button text="HIRE ME" prefix={<IoMdPaperPlane size={18} />} />
@@ -77,7 +81,7 @@ const Hero = () => {
               </div>
             </div>
           </div>
-        </div> */}
+        </div>  */}
       </div>
     </div>
   );

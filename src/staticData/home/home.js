@@ -119,7 +119,7 @@ export const introduce = {
 export const partners = [
   {
     imgUrl: partner1Image,
-    altText: "Partner Name 1",
+    altText: "#OpenToWork",
     link: "#",
   },
 ];
